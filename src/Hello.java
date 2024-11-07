@@ -1,3 +1,4 @@
+import java.util.Scanner;
 
 public class Hello {
 
@@ -11,6 +12,13 @@ public class Hello {
 		
 		sum = number1 + number2;
 		System.out.println(AddFifteen(sum));
+		
+		double extra;
+		Scanner reader = new Scanner(System.in);
+		System.out.println("Please enter a number");
+		extra = reader.nextDouble();
+		sum+= extra;
+		System.out.println("the new sum +" + extra + " = "+AddFifteen(sum));
 		
 	}
 
